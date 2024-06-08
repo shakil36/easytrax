@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Practise</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="output/style.css" />
+  </head>
+  <body>
+    <!----------navbar start-------->
+    <nav class="w-full fixed top-0 shadow-lg bg-white z-50">
+      <!------Flex container------>
+      <div class="mx-auto px-14 py-3 flex items-center justify-between">
+        <div class="h-auto w-64">
+          <img class="h-16 w-auto" src="Easytrax Logo-1.png" alt="" />
+        </div>
+        <!-----Menu Items start----->
+        <div class="text-gray-600 font-bold hidden space-x-2 md:flex">
+          <!-------Single menu start-------->
+          <div
+            class="px-4 py-4 bg-primary items-center cursor-pointer relative group"
+          >
+            <span class="hover:text-orange-500"
+              >About Us
+              <i class="fa fa-caret-down"></i>
+            </span>
+            <div
+              class="absolute w-40 left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible"
+            >
+              <a
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+                href="#"
+              >
+                <span class="w-full ml-1 text-gray-600 text-sm"
+                  >Our Company</span
+                >
+              </a>
+              <a
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+                href="#"
+              >
+                <span class="w-full ml-1 text-gray-600 text-sm">Services</span>
+              </a>
+            </div>
+          </div>
+          <!-------Single menu end-------->
+          <!-------Single menu start-------->
+          <div
+            class="px-8 py-4 bg-primary items-center cursor-pointer relative group"
+          >
+            <span class="hover:text-orange-500"
+              >Tracking
+              <i class="fa fa-caret-down"></i>
+            </span>
+            <div
+              class="absolute w-40 left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible"
+            >
+              <a
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+                href="#"
+              >
+                <span class="w-full ml-1 text-gray-600 text-sm"
+                  >Our Company</span
+                >
+              </a>
+              <a
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+                href="#"
+              >
+                <span class="w-full ml-1 text-gray-600 text-sm">Services</span>
+              </a>
+            </div>
+          </div>
+          <!-------Single menu end-------->
+          <!-------Single menu start-------->
+          <div
+            class="px-8 py-4 bg-primary items-center cursor-pointer relative group"
+          >
+            <span class="hover:text-orange-500"
+              >Telematics & Big data
+              <i class="fa fa-caret-down"></i>
+            </span>
+            <div
+              class="absolute w-40 left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible"
+            >
+              <a
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+                href="#"
+              >
+                <span class="w-full ml-1 text-gray-600 text-sm"
+                  >Our Company</span
+                >
+              </a>
+              <a
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+                href="#"
+              >
+                <span class="w-full ml-1 text-gray-600 text-sm">Services</span>
+              </a>
+            </div>
+          </div>
+          <!-------Single menu end-------->
+          <!-------Single menu start-------->
+          <div
+            class="px-8 py-4 bg-primary items-center cursor-pointer relative group"
+          >
+            <span class="hover:text-orange-500"
+              >Devices
+            </span>
+          </div>
+          <!-------Single menu end-------->
+          <!-------Single menu start-------->
+          <div
+            class="px-8 py-4 bg-primary items-center cursor-pointer relative group"
+          >
+            <span class="hover:text-orange-500"
+              >Contact Us
+              <i class="fa fa-caret-down"></i>
+            </span>
+            <div
+              class="absolute w-40 left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible"
+            >
+              <a
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+                href="#"
+              >
+                <span class="w-full ml-1 text-gray-600 text-sm"
+                  >Our Company</span
+                >
+              </a>
+              <a
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+                href="#"
+              >
+                <span class="w-full ml-1 text-gray-600 text-sm">Services</span>
+              </a>
+            </div>
+          </div>
+          <!-------Single menu end-------->
+          <!-------Single menu start-------->
+          <div
+            class="px-8 py-4 bg-primary items-center cursor-pointer relative group"
+          >
+            <span
+              class="flex flex-wrap space-x-2 text-center items-center justify-center hover:text-orange-500"
+            >
+              <i class="fa fa-user"></i>Login <i class="fa fa-caret-down"></i
+            ></span>
+            <div
+              class="absolute w-40 left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible"
+            >
+              <a
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+                href="#"
+              >
+                <span class="w-full ml-1 text-gray-600 text-sm"
+                  >Our Company</span
+                >
+              </a>
+              <a
+                class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+                href="#"
+              >
+                <span class="w-full ml-1 text-gray-600 text-sm">Services</span>
+              </a>
+            </div>
+          </div>
+          <!-------Single menu end-------->
+        </div>
+        <!-----Menu Items end----->
+        <!------Hamburger Icon------->
+        <div
+          id="menu-btn"
+          class="py-2 px-3 space-y-1 border rounded-md block hamburger md:hidden focus:outline-none"
+        >
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+        </div>
+      </div>
+
+      <!-----Mobile menu----->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:-silf-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Pracing</a>
+          <a href="#">Products</a>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Comunity</a>
+        </div>
+      </div>
+    </nav>
+    <!-------navber end------->
+    <!--------Banner Section------->
+    <div>
+      <div class="bg-cover bg-no-repeat bg-center py-36"
+      style="background-image: url('banner.png')">
+        <div class="mx-auto text-center items-center justify-center my-40">
+        <h1
+          class="text-center text-white text-5xl"
+        >
+          DEVICES AND FEATURES
+        </h1>
+      </div>
+        <!------selector Container start------>
+        <div
+          class="mx-auto items-center justify-center h-fit w-3/5 flex-col rounded-md shadow-lg bg-white p-8 -mb-52 pb-20"
+        >
+          <div>
+            <h1
+              class="text-center text-4xl font-bold text-indigo-900 mt-5"
+            >
+              Choose Your Tracking System!
+            </h1>
+          </div>
+          <div class="flex mx-auto items-center justify-center gap-x-16 sm:gap-y-3 lg:flex-row md:flex-col mt-8 sm:flex-col md:overflow-hidden">
+            <div class="flex-col">
+              <div>
+                <p class="mb-2">Technology</p>
+              </div>
+                <select class="lg:w-72 md:flex-col text-gray-900 pl-3 border rounded-md border-gray-300 ml-0 py-1.5 sm:w-56 sm:flex-col focus:ring-0 focus:border-gray-800 overflow-hidden block">
+                  <option>Default sorting</option>
+                  <option>Price low-high</option>
+                  <option>Price high-low</option>
+                  <option>Latest product</option>
+                </select>
+            </div>
+            <div class="flex-col">
+              <div>
+                <p class="mb-2">Use</p>
+              </div>
+                <select class="lg:w-72 md:flex-col text-gray-900 pl-3 border rounded-md border-gray-300 ml-0 py-1.5 sm:w-56 sm:flex-col focus:ring-0 focus:border-gray-800 overflow-hidden block">
+                  <option>Default sorting</option>
+                  <option>Price low-high</option>
+                  <option>Price high-low</option>
+                  <option>Latest product</option>
+                </select>
+            </div>
+            <div class="flex-col">
+              <div>
+                <p class="mb-2">Technology</p>
+              </div>
+                <select class="lg:w-72 md:flex-col text-gray-900 pl-3 border rounded-md border-gray-300 ml-0 py-1.5 sm:w-56 sm:flex-col focus:ring-0 focus:border-gray-800 overflow-hidden block">
+                  <option>Default sorting</option>
+                  <option>Price low-high</option>
+                  <option>Price high-low</option>
+                  <option>Latest product</option>
+                </select>
+            </div>
+          </div>
+        </div>
+        <!------selector Container end------>
+      </div>
+    </div>
+    <!------banner section end------>
+    <!--------Testing 2 Section start-------->
+    <div id="works" class="py-32 dark:bg-slate-900">
+      <div class="mx-auto items-center justify-center">
+        <div class="py-8 sm:p-0 flex flex-wrap space-x-8 items-center justify-center">
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">Dual 4G telematics HD dashcam with driver monitoring AI
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-2.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">Amber Vision C440 is an up to 4-channel LTE dashcam system desi
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-3.jpg" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">The Amber Instant C200 is a discreet tracking device cleverly concealed.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-4.jpg" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-5.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-6.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-7.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-8.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+          <!------card------>
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg p-8 my-3 md:my-10 m-1 hover:shadow-slate-500">
+            <img class="mx-auto max-h-[300px]" src="Amber-1.png" alt="">
+            <h1 class="text-2xl font-bold">Amber Vision C400</h1>
+            <p class="my-6">I specialize in creating interactive websites for individuals and small businesses.
+            </p>
+            <div class="mx-auto text-center items-center justify-center">
+            <button>
+              <a
+                href="#"
+                class="text-center p-1.5 px-16 text-orange-600 bg-white border border-orange-600 rounded-md hover:bg-brightRedLight hover:text-white hover:border-brightRedLight md:block"
+                >MORE INFO</a
+              >
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------Testimonial Section end-------->
+    <!--------input section start-------->
+    <div
+      class="bg-cover bg-no-repeat bg-center py-36"
+      style="background-image: url('banner-2.jpg')"
+    >
+      <div class="grid lg:grid-cols-2 mx-28 justify-between sm:flex-col">
+        <div class="mx-10 mt-0">
+          <h1 class="text-4xl text-white font-bold mb-4 capatalize">
+            NEED MORE INFORMATION<br />CONTACT US NOW
+          </h1>
+        </div>
+        <!--------input section right start------->
+        <div class="w-5/6 flex flex-col my-auto space-y-4 focus:ring-0 border-none cursor-pointer">
+          <input type="text" class="py-2 px-4 rounded-md focus:outline-none cursor-pointer" placeholder="Name" />
+          <input
+            type="Email"
+            class="py-2 px-4 focus:outline-none rounded-md"
+            placeholder="Email"
+          />
+          <div class="flex flex-row space-x-4 focus:outline-none">
+            <input
+              type="phone number"
+              class="w-44 py-2 px-4 rounded-md focus:outline-none"
+              placeholder="+88 0"
+            />
+            <input
+              type="text"
+              class="w-3/4 py-2 px-4 rounded-md focus:outline-none"
+              placeholder="Phone Number"
+            />
+          </div>
+          <textarea
+            class="p-2 h-36 rounded-md focus:outline-none"
+            cols="30"
+            rows="10"
+            placeholder="Text Your Massage Type here..."
+          ></textarea>
+          <div class="w-80 h-14 flex my-2 bg-white rounded-md">
+          <input
+            id="cat-1"
+              class="text-white bg-white ml-6 focus:ring-0 rounded-sm"
+              type="checkbox"
+              />
+              <label class="text-gray-800 ml-3 my-auto cursor-pointer" for="cat-1"
+              >I'm not a robot</label
+              >
+              <img
+              class="w-16 h-16 my-auto ml-24 right-0"
+              src="captcha.svg"
+              alt=""
+            />
+            </div>
+            <div
+          class="pt-2"
+        >
+          <a
+            href="#"
+            class="p-3 px-7 pt-2 text-white bg-sky-400 rounded-md shadow-2xl baseline border border-sky-400 hover:bg-sky-600"
+            >Submit</a
+          >
+        </div>
+          </div>
+        </div>
+        <!--------input section right end------->
+      </div>
+    </div>
+    <!--------input section end-------->
+    <!-------Section CTA------>
+    <footer class="items-center justify-center bg-slate-50">
+      <!-----Flex Container----->
+      <div class="items-center justify-between space-x-2 px-6 py-8 mx-auto">
+        <!---Heading----->
+        <h2 class="w-full text-2xl font-bold text-center">
+          Do you want to become an
+          <span class="text-2xl text-orange-500 font-bold"
+            >Amber Connect distributor?</span
+          >
+        </h2>
+        <!----Button------>
+        <div
+          class="border-white items-center justify-center text-center mt-4 mb-3 mx-auto"
+        >
+          <a
+            href="#"
+            class="p-3 px-7 pt-2 text-white bg-sky-400 rounded-md shadow-2xl baseline border border-sky-400 hover:bg-sky-600"
+            >CONTACT US</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-----Footer section start------>
+    <section class="bg-veryDarkBlue">
+      <!-----flex container------>
+      <div class="flex flex-wrap mx-auto lg:items-start sm:items-center justify-center py-6 lg:flex-row lg:space-x-80 md:flex-col px-12 sm:flex-col md:space-y-0">
+        <!---Logo and social links---->
+        <div
+          class="space-y-3 md:flex-col md:space-y-0 md:items-start"
+        >
+          <!-------Logo------>
+          <div>
+            <img class="w-36" src="Easytrax Logo-1.png" class="h-8" alt="" />
+          </div>
+          <!-----Social Links Container----->
+          <div
+            class="flex top-0 text-xl text-sky-400 space-x-4 pl-2 pt-7"
+          >
+            <!-----Link 1------>
+            <div
+              class="hover:text-white"
+            >
+              <i class="fa fa-instagram"></i>
+            </div>
+            <div
+              class="hover:text-white"
+            >
+              <i class="fa fa-facebook"></i>
+            </div>
+            <div
+              class="hover:text-white"
+            >
+              <i class="fa fa-twitter"></i>
+            </div>
+            <div
+              class="hover:text-white"
+            >
+              <i class="fa fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <!-------List Container------>
+        <div class="flex flex-row lg:space-x-80 lg:p-0 sm:space-x-8 sm:p-8 sm:flex-row">
+          <div class="flex flex-col sm:flex-col text-white">
+            <h1 class="text-white text-2xl font-bold">Quick Links</h1>
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Tracking</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Telematics & Big Data</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Devices</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Our Company</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Services</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Contact Us</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Career</a
+            >
+          </div>
+          <div class="flex flex-col sm:flex-col text-white">
+            <h1 class="text-white text-left text-2xl font-bold">Products</h1>
+            <a href="#" class="hover:text-sky-400 hover:text-decoration">Car</a>
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Bike</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Personal</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Fleet</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Boat</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Vehicle Recovery</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Quarantine</a
+            >
+          </div>
+        </div>
+          <div class="">
+            <div class="flex flex-col text-white">
+              <h1 class="text-white text-2xl font-bold">Contact Us</h1>
+              <a href="#" class="hover:text-brightRed">Helpline</a>
+              <a href="#" class="hover:text-brightRed">+1 876 616 7661</a>
+              <a href="#" class="hover:text-brightRed">+1 305 420 6361</a>
+              <a href="#" class="hover:text-brightRed">info@amberconnect.com</a>
+              <a href="#" class="hover:text-sky-400 hover:text-decoration"
+                >Log In Watch Demo</a
+              >
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-----Footer section end------>
+    <script src="js/script.js"></script>
+  </body>
+</html>

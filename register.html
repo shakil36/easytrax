@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="output/style.css" />
+  </head>
+  <body>
+    <!----------navbar start-------->
+    <nav class="w-full fixed top-0 shadow-lg bg-white z-50">
+      <!------Flex container------>
+      <div class="mx-auto px-14 py-5 flex items-center justify-between">
+        <div class="pt-2 h-auto w-64">
+          <img src="logo.svg" alt="" />
+        </div>
+        <!-----Menu Items----->
+        <div class="text-gray-600 font-bold hidden space-x-20 md:flex">
+          <a href="#" class="hover:text-red-400">About Us</a>
+          <a href="#" class="hover:text-red-400">Tracking</a>
+          <a href="#" class="hover:text-red-400">Telematics & Big data</a>
+          <a href="#" class="text-red-400 hover:text-red-400">Devices</a>
+          <a href="#" class="hover:text-red-400">Contact Us</a>
+          <!----Button ----->
+          <a class="font-bold flex hover:text-red-400" href="#">
+            <span class="items-center justify-center">
+              <i class="fa fa-user"></i>
+            </span>
+            <span class="ml-1">Login</span>
+          </a>
+        </div>
+        <!------Hamburger Icon------->
+        <div
+          id="menu-btn"
+          class="py-2 px-3 space-y-1 border rounded-md block hamburger md:hidden focus:outline-none"
+        >
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+        </div>
+      </div>
+
+      <!-----Mobile menu----->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:-silf-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Pracing</a>
+          <a href="#">Products</a>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Comunity</a>
+        </div>
+      </div>
+    </nav>
+    <!-------navber end------->
+    <!-------register section start------->
+    <div class="container py-16 mt-28">
+      <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
+        <h2 class="text-2xl uppercase font-medium mb-1">Login</h2>
+        <p class="text-gray-600 mb-6 text-sm">
+          Login if you are a reating customer
+        </p>
+        <form action="">
+          <div class="space-y-4">
+            <div>
+              <label class="text-gray-600 mb-2 block">Email address</label>
+              <input
+                type="eamil"
+                class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-brightRedLight placeholder-gray-400"
+                placeholder="Enter your email address"
+              />
+            </div>
+            <div>
+              <label class="text-gray-600 mb-2 block">Password</label>
+              <input
+                type="password"
+                class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-brightRedLight placeholder-gray-400"
+                placeholder="Enter your password"
+              />
+            </div>
+          </div>
+          <div class="flex items-center justify-between mt-6">
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="agreement"
+                class="text-brightRed focus:ring-0 rounded-sm cursor-pointer"
+              />
+              <label for="agreement" class="text-gray-600 ml-3 cursor-pointer"
+                >Remember me</label
+              >
+            </div>
+            <a href="#" class="text-brightRed">Forget password?</a>
+          </div>
+          <div class="mt-4">
+            <button
+              class="block w-full py-2 text-center text-white bg-brightRed border border-brightRed rounded hover:bg-transparent hover:text-brightRed transition uppercase font-medium"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+        <!-------Login section start------->
+        <div class="mt-6 flex justify-center relative">
+          <div class="text-gray-600 uppercase px-3 bg-white z-10 relative">
+            Or login with
+          </div>
+          <div
+            class="absolute left-0 top-3 w-full border-b-2 border-gray-200"
+          ></div>
+        </div>
+        <div class="flex mt-4 gap-4">
+          <a
+            class="w-1/2 py-2 text-center text-white bg-blue-800 rounded uppercase font-medium text-sm hover:bg-blue-700"
+            href="#"
+            >Facebook</a
+          >
+          <a
+            class="w-1/2 py-2 text-center text-white bg-yellow-600 rounded uppercase font-medium text-sm hover:bg-yellow-500"
+            href="#"
+            >Google</a
+          >
+        </div>
+        <p class="mt-4 text-gray-600 text-center">
+          Don't have an account?
+          <a class="text-brightRed" href="#">Register now</a>
+        </p>
+        <!-------Login section start------->
+      </div>
+    </div>
+    <!-------register section end------->
+    <!-----Footer section start------>
+    <section class="bg-veryDarkBlue">
+      <!-----flex container------>
+      <div
+        class="flex flex-wrap mx-auto lg:items-start sm:items-center justify-center py-6 lg:flex-row lg:space-x-80 md:flex-col px-12 sm:flex-col md:space-y-0"
+      >
+        <!---Logo and social links---->
+        <div class="space-y-3 md:flex-col md:space-y-0 md:items-start">
+          <!-------Logo------>
+          <div>
+            <img class="w-36" src="logo-2.svg" class="h-8" alt="" />
+          </div>
+          <!-----Social Links Container----->
+          <div class="flex top-0 text-xl text-sky-400 space-x-4 pl-2 pt-7">
+            <!-----Link 1------>
+            <div class="hover:text-white">
+              <i class="fa fa-instagram"></i>
+            </div>
+            <div class="hover:text-white">
+              <i class="fa fa-facebook"></i>
+            </div>
+            <div class="hover:text-white">
+              <i class="fa fa-twitter"></i>
+            </div>
+            <div class="hover:text-white">
+              <i class="fa fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <!-------List Container------>
+        <div
+          class="flex flex-row lg:space-x-80 lg:p-0 sm:space-x-8 sm:p-8 sm:flex-row"
+        >
+          <div class="flex flex-col sm:flex-col text-white">
+            <h1 class="text-white text-2xl font-bold">Quick Links</h1>
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Tracking</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Telematics & Big Data</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Devices</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Our Company</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Services</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Contact Us</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Career</a
+            >
+          </div>
+          <div class="flex flex-col sm:flex-col text-white">
+            <h1 class="text-white text-left text-2xl font-bold">Products</h1>
+            <a href="#" class="hover:text-sky-400 hover:text-decoration">Car</a>
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Bike</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Personal</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Fleet</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Boat</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Vehicle Recovery</a
+            >
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Quarantine</a
+            >
+          </div>
+        </div>
+        <div class="">
+          <div class="flex flex-col text-white">
+            <h1 class="text-white text-2xl font-bold">Contact Us</h1>
+            <a href="#" class="hover:text-brightRed">Helpline</a>
+            <a href="#" class="hover:text-brightRed">+1 876 616 7661</a>
+            <a href="#" class="hover:text-brightRed">+1 305 420 6361</a>
+            <a href="#" class="hover:text-brightRed">info@amberconnect.com</a>
+            <a href="#" class="hover:text-sky-400 hover:text-decoration"
+              >Log In Watch Demo</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----Footer section end------>
+  </body>
+</html>
